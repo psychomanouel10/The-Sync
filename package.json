@@ -2,7 +2,7 @@
   "name": "sync",
   "version": "3.3.3",
   "description": "A Discord Bot with focus on Fun, Moderation, and Utility commands.",
-  "main": "celestia.js",
+  "main": "sync.js",
   "scripts": {
     "start": "node sync.js"
   },
