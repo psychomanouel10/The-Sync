@@ -1,6 +1,4 @@
 
-const activities = require("../assets/activities.json");
-
 module.exports = class {
   constructor(client) {
     this.client = client;
@@ -28,15 +26,8 @@ module.exports = class {
 
     // Activity List
     // You can add more to it in activities.json!
-    setInterval(() => { // Randomly choses one of the following activites in an Interval 
-      let index = activities[Math.round(Math.random() * (activities.length - 1))];
-      this.client.user.setPresence({ game: { name: index, type: "PLAYING"}});
-  }, 300000); // Changes every 5 minutes
+    this.client.user.setActivity('/help - Sync');
     this.client.logger.log(`Ready and logged in as ${this.client.user.tag}`, "ready");
   }
 };
-module.exports = async (client) => {
-  console.log(`Ready on ${client.guilds.cache.size} servers, for a total of ${client.users.cache.size} users`);
 
-  client.user.setActivity(client.config.discord.activity);
-};
