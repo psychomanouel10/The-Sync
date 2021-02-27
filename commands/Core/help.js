@@ -21,7 +21,7 @@ class Help extends Command {
           .setColor("RANDOM")
           .setThumbnail(this.client.user.displayAvatarURL())
           .setTitle(`:wave: Hey ${message.author.username}, I'm sync!`)
-          .setDescription("I'm a bot developed and maintained by manouelツ#1398\n\All my commands start with the prefix / To see all my commands use /commands! check out at youtube sync:https://www.youtube.com/channel/UCywzQb9ZkAA6DcryiH9D1fQ")
+          .setDescription("I'm a bot developed and maintained by manouelツ#1398\n\All my commands start with the prefix / To see all my commands use /commands! check out at youtube sync:https://bit.ly/3b1zaDr")
           .addField("Version", celestia.version)
           
           .setFooter(`Made with Discord.js v${version}`)
