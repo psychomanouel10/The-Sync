@@ -1,6 +1,5 @@
 
 
-// We need this for our .env file, make sure to put it above anything else!
 require("dotenv").config();
 const fs = require('fs');
 const Discord = require("discord.js");
