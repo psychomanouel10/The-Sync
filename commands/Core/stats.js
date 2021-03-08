@@ -19,7 +19,7 @@ class Stats extends Command {
     const duration = moment.duration(this.client.uptime).format(" D [days], H [hrs], m [mins], s [secs]");
 
     const embed = new MessageEmbed()
-      .setTitle("__**sync Bot Stats**__")
+      .setTitle("__**Sync Bot Stats**__")
       .setColor('RANDOM')
       .addField(':clock4: | **Uptime**', `${duration}`, true)
       .addField(':bar_chart: | **Server Count**', `${this.client.guilds.cache.size.toLocaleString()}` , true)
