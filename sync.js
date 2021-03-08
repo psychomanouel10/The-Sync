@@ -8,7 +8,7 @@ const readdir = promisify(require("fs").readdir);
 const Enmap = require("enmap");
 const klaw = require("klaw");
 const path = require("path");
-const { CELESTIA_TOKEN } = process.env;
+const { TOKEN } = process.env;
 
 // Client Settings
 class Celestia extends Discord.Client {
@@ -149,7 +149,7 @@ for (let i = 0; i < client.config.permLevels.length; i++) {
 }
 
   // Discord Login
-  client.login('NzkyNDAwMjkzNzU2NDAzNzEy.X-dKSA.OExRS1eEQwTGLZ5RV2huWJAVd5A')
+  client.login(TOKEN);
 }
 init();
 client.on("guildMemberAdd", (member) => {
