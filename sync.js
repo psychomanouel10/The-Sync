@@ -149,7 +149,7 @@ for (let i = 0; i < client.config.permLevels.length; i++) {
 }
 
   // Discord Login
-  client.login(TOKEN);
+  client.login(CELESTIA_TOKEN);
 }
 init();
 client.on("guildMemberAdd", (member) => {
