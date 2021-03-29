@@ -149,7 +149,7 @@ for (let i = 0; i < client.config.permLevels.length; i++) {
 }
 
   // Discord Login
-  client.login("NzkyNDAwMjkzNzU2NDAzNzEy.X-dKSA.OExRS1eEQwTGLZ5RV2huWJAVd5A");
+  client.login("TOKEN");
 }
 init();
 client.on("guildMemberAdd", (member) => {
